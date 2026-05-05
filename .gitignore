@@ -5,7 +5,7 @@ __pycache__/
 # Virtual environment
 venv/
 .env/
-
+.env
 # OS / editor junk
 .DS_Store
 Thumbs.db
