@@ -7,7 +7,7 @@ class Product(Base):
     __tablename__ = "products"
 
     id= Column(Integer,primary_key=True)
-    product_name= Column(String,unique=True)
+    product_name= Column(String(255),unique=True)
     price = Column(Float)
 
     orders = relationship("Order",back_populates="product")
