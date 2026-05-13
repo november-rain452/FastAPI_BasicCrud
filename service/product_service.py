@@ -1,9 +1,9 @@
-from repository import order_repo
+from repository import product_repo
 from sqlalchemy.orm import Session
-from schemas.orders_schema import OrderCreate
+from schemas.product_schema import ProductCreate
 
-def create_order(order :OrderCreate,db:Session):
-    return order_repo.create_order(order,db)
+def create_product(product :ProductCreate,db:Session):
+    return product_repo.create_product(product,db)
 
-def get_order_by_id(order_id:int,db:Session):
-    return order_repo.get_order_by_id(order_id,db)
+def get_product_by_id(product_id:int,db:Session):
+    return product_repo.get_product_by_id(product_id,db)
