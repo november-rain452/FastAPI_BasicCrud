@@ -113,15 +113,16 @@ uvicorn main:app --reload
 
 ---
 
-## Project Structure (Typical)
+## Project Structure 
 
 ```
-app/
+FastAPI_BasicCrud/
 ├── models/        # SQLAlchemy models
 ├── schemas/       # Pydantic schemas
 ├── services/      # Business logic
 ├── api/           # Routes
 ├── core/          # Config & database setup
+├── repository/    # Database Queries
 ```
 
 ---
@@ -142,4 +143,3 @@ app/
 
 ---
 
-Replace `<repository_url>` and `<project_directory>` with your actual values before publishing.
